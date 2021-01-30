@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>浮动</title>
+  <style>
+      /* 清除浏览器默认边距 */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .wrap {
+        /* overflow: hidden; */
+        /* border: 1px solid red; */
+      }
+      /* 脱离文档流 */
+      .left {
+        float: left;
+        width: 200px;
+        height: 200px;
+        background: purple;
+      }
+
+      .right {
+        margin-left: 200px;
+        /* overflow: hidden; */
+        background: skyblue;
+        height: 200px;
+      }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="left">
+      左侧固定内容
+    </div>
+    <div class="right">
+      右侧内容自适应
+    </div>
+  </div>
+</body>
+</html>

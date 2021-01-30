@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>grid布局</title>
+  <style>
+      /* 清除浏览器默认边距 */
+      * {
+          margin: 0;
+          padding: 0;
+      }
+      .wrap {
+        display: grid;
+        grid-template-rows: 200px;
+        grid-template-columns: 200px auto;
+        width:100%;
+      }
+      .left {
+          background: purple;
+      }
+      .right {
+          background: skyblue;
+      }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="left">
+    左侧固定内容
+  </div>
+  <div class="right">
+    右侧内容自适应
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0
+    }
+    .div {
+      position: absolute;
+    }
+    .top {
+      background: red;
+      height: 100px;
+      width: 100%;
+      top: 0;
+    }
+
+    .content {
+      background: yellow;
+      width: 100%;
+      overflow: auto;
+      top: 100px;
+      bottom: 100px;
+    }
+
+    .bottom {
+      background: blue;
+      height: 100px;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <article class="top-content-bottom">
+    <div class="div top">top</div>
+    <div class="div content">
+      <h1>绝对定位布局</h1>
+    </div>
+    <div class="div bottom">bottom</div>
+  </article>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html * {
+      padding: 0;
+      margin: 0;
+    }
+    .div {
+      height: 200px;
+    }
+    .left {
+      position: absolute;
+      left: 0;
+      width: 300px;
+      background: red;
+    }
+    .right {
+      position: absolute;
+      right: 0;
+      width: 300px;
+      background: blue;
+    }
+    .center {
+      position: absolute;
+      left: 300px;
+      right: 300px;
+      background: yellow;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="div left"></div>
+  <div class="div center">
+    <h1>绝对定位解决方案</h1>
+    1. 这是三栏布局中间部分
+    2. 这是三栏布局中间部分
+  </div>
+  <div class="div right"></div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    .layout {
+      width: 100%;
+      height: 100%;
+      display: table;
+    }
+    .top {
+      display: table-row;
+      height: 100px;
+      background: red;
+    }
+
+    .content {
+      display: table-row;
+      background: yellow;
+      overflow: auto;
+    }
+
+    .bottom {
+      display: table-row;
+      height: 100px;
+      background: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div class="top">top</div>
+    <div class="content">
+      <h1>table布局</h1>
+    </div>
+    <div class="bottom">bottom</div>
+  </div>
+</body>
+</html>
