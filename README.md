@@ -35,4 +35,4 @@ minmax() 函数： 给网格元素一个最小和最大的尺寸
 
 auto 关键字：由浏览器决定长度，自适应
 
-grid-row-gap 属性、grid-column-gap 属性分别设置行间距和列间距。**grid-gap 属性是两者的简写形式。**
+2.grid-row-gap 属性、grid-column-gap 属性分别设置行间距和列间距。**grid-gap 属性是两者的简写形式。**
