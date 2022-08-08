@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrapper {
+      margin: 60px;
+      /* 声明一个容器 */
+      /* display: inline-grid; */
+      display: grid;
+      /*  声明列的宽度  */
+      /* repeat() 函数：可以简化重复的值 */
+      /* grid-template-columns: repeat(3, 200px); */
+      /* auto-fill 关键字：表示自动填充，让一行（或者一列）中尽可能的容纳更多的单元格 */
+      /* grid-template-columns: repeat(auto-fill, 200px); */
+      /* fr 关键字： fr 单位代表网格容器中可用空间的一等份 */
+      /* grid-template-columns: 200px 1fr 2fr; */
+      /* minmax() 函数： 给网格元素一个最小和最大的尺寸*/
+      /* grid-template-columns: 1fr 1fr minmax(300px, 2fr); */
+      /* auto 关键字：由浏览器决定长度，自适应 */
+      grid-template-columns: 100px auto 100px;
+
+      /*  声明行间距和列间距  */
+      /* grid-row-gap 属性、grid-column-gap 属性分别设置行间距和列间距。grid-gap 属性是两者的简写形式。 */
+      grid-gap: 20px;
+      /*  声明行的高度  */
+      grid-template-rows: 100px 200px;
+    }
+    .one {
+      background: #19CAAD;
+    }
+    .two { 
+      background: #8CC7B5;
+    }
+    .three {
+      background: #D1BA74;
+    }
+    .four {
+      background: #BEE7E9;
+    }
+    .five {
+      background: #E6CEAC;
+    }
+    .six {
+      background: #ECAD9E;
+    }
+    .item {
+      text-align: center;
+      font-size: 200%; /* 相对于继承的字体大小 */
+      color: #fff;
+    }
+    .title {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">test1</div>
+  <div class="wrapper">
+    <div class="one item">One</div>
+    <div class="two item">Two</div>
+    <div class="three item">Three</div>
+    <div class="four item">Four</div>
+    <div class="five item">Five</div>
+    <div class="six item">Six</div>
+  </div>
+  <div class="title">test2</div>
+</body>
+</html>
